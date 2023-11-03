@@ -6,7 +6,11 @@
     }
   ],
     "routes": [
-      { "src": "/(.*)", 
-        "dest": "/main.html" }
+      { "src": "/", 
+        "dest": "/main.html" },
+        {
+          "src": "/(.*)",
+          "dest": "/$1.html"
+        }
     ]
   }
