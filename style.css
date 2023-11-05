@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'days';
+    src: local('days'),
+    url('/fonts/Days.ttf') format('truetype')
+}
