@@ -1,0 +1,114 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: #8bc34a;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+}
+header {
+    height: 80px;
+    position: fixed;
+    background-color: #8bc34a;
+    width: 100%;
+    color: white;
+    z-index: 1000; /* Для управления слоем отображения */
+    transition: top 0.3s; /* Для анимации появления и скрытия */
+}
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: days;
+    color: #0d47a1;
+    text-decoration: none;
+}
+/*header h1:visited{
+    color: #0d47a1;
+}*/
+header a{
+    text-decoration: none;
+}
+.main:visited{
+    color: #0d47a1;
+}
+footer{
+    height: 6;
+    bottom: 0;
+}
+footer h4{
+    bottom: 0;
+    left: 50%;
+}
+.nav{                       /*это навигационная панель из футера  */
+    position: fixed;
+    display: none;
+    flex-direction: row;
+    width: 100%;
+}
+.nav a{                     /*а это ссылки внутри панели*/
+    position: relative;
+    display: inline-block;
+    left: 5%;
+    top: 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+@media screen and (min-width: 769px) {
+    .nav {
+        display: flex;
+    }
+
+    #menuButton,
+    #closeMenuButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+
+    header h1 {
+        transform: none;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        background-color: #8bc34a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: left 0.3s;
+        z-index: 1; /* Повышаем индекс позиционирования */
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav.active {
+        left: 0;
+        z-index: 2;
+    }
+
+    #closeMenuButton {
+        display: none;
+    }
+}
