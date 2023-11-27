@@ -1,10 +1,12 @@
-body{
+/* Сброс стилей */
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}*{
     margin: 0;
     padding: 0;
 }
-footer{
+
+/* Стили для футера */
+footer {
     background-color: #8bc34a;
     width: 100%;
     color: white;
@@ -12,63 +14,68 @@ footer{
     position: relative;
     bottom: 0;
 }
+
+footer h4 {
+    margin: 0;
+}
+
+/* Стили для шапки */
 header {
     height: 80px;
     position: fixed;
     background-color: #8bc34a;
     width: 100%;
     color: white;
-    z-index: 1000; /* Для управления слоем отображения */
-    transition: top 0.3s; /* Для анимации появления и скрытия */
+    z-index: 1000;
+    transition: top 0.3s;
 }
-header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-family: days;
-    color: #0d47a1;
+
+header a {
     text-decoration: none;
+    color: inherit; /* Цвет ссылок наследуется от родительского элемента */
 }
-/*header h1:visited{
-    color: #0d47a1;
-}*/
-header a{
-    text-decoration: none;
-}
-.main:visited{
+
+.main:visited {
     color: #0d47a1;
 }
-footer{
-    height: 6;
-    bottom: 0;
-}
-footer h4{
-    bottom: 0;
-    left: 50%;
-}
-.nav{                       /*это навигационная панель из футера  */
+
+/* Навигационная панель */
+.nav {
     position: fixed;
     display: none;
     flex-direction: row;
     width: 100%;
 }
-.nav a{                     /*а это ссылки внутри панели*/
-    position: relative;
-    display: inline-block;
-    left: 5%;
-    top: 30px;
+
+.nav a {
     color: white;
     text-decoration: none;
     margin-right: 20px;
+    position: relative;
+    top: 50%;
 }
+
+/* Медиа-запросы */
 @media screen and (min-width: 769px) {
     .nav {
         display: flex;
     }
 
-    #menuButton,
+    header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-family: days;
+        color: #0d47a1;
+        text-decoration: none;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
     #closeMenuButton {
         display: none;
     }
@@ -82,8 +89,11 @@ footer h4{
     header h1 {
         transform: none;
         text-align: center;
-        top: 50%;
-        left: 50%;
+        width: 100%;
+        font-family: days;
+        margin: 0;
+        top: 25%;
+        position: absolute;
     }
 
     .nav {
@@ -96,11 +106,7 @@ footer h4{
         flex-direction: column;
         align-items: center;
         transition: left 0.3s;
-        z-index: 1; /* Повышаем индекс позиционирования */
-    }
-
-    .nav {
-        width: 100%;
+        z-index: 1;
     }
 
     .nav.active {
@@ -108,7 +114,18 @@ footer h4{
         z-index: 2;
     }
 
+    #menuButton {
+        top: 50%;
+    }
+
     #closeMenuButton {
+        position: absolute;
         display: none;
+        left: 20%;
+        top: -40px;
+        right: 10px;
+        z-index: 3;
+        background-color: #000;
+        padding: 5px 10px;
     }
 }
