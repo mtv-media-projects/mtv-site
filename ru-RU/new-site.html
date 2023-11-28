@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Канал МТВ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/ico.jpg" type="image/x-icon">
+    <style>
+        p {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+        .question {
+            cursor: pointer;
+        }
+
+        .question::after {
+            content: '\25BA';
+            transition: transform 0.3s ease;
+        }
+
+        .question.active::after {
+            transform: rotate(180deg);
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .question.active + .answer {
+            display: block;
+        }
+        h2 {
+            padding-top: 20px;
+        }
+        @media (max-width: 768px) {
+            p {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="header">
+            <div class="header_body">
+                <h1><a class="main" href="/ru-RU/main.html">Канал МТВ</a></h1>
+                <h1><a class="main_small" href="/ru-RU/main.html">МТВ</a></h1>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><h3><a class="header_link" href="/cringe-lounge.html">Cringe lounge</a></h3></li>
+                        <li><h3><a class="header_link" href="/new-site.html">Новый сайт: FAQ</a></h3></li>
+                        <li><h3><a class="header_link" href="https://www.mtv-media.ru/">Старая версия сайта</a></h3></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+    </header>
+    <main class="content">
+        <p style="text-indent: 20px;"> <b>На данный момент создаётся новый сайт МТВ (этот). Здесь приведены некоторые типовые вопросы и ответы на них. </b></p>
+        <h2 class="question">Почему создаётся новый сайт?</h2>
+        <h3 class="answer">Новый сайт создаётся по причине не соотвествия моим требованиям, в гугл сайтах слишком много мелких нюансов, с которыми я не хочу мириться. Поэтому я решил написать сайт с нуля, чтобы сделать его по своему вкусу.</h3>
+        <h2 class="question">Что будет со старой версией?</h2>
+        <h3 class="answer">Старая версия на момент разработки этой будет обновляться и актуализироваться с нынешними событиями и оформлением. После того, как новая версия будет закончена, поддержка старой версии будет прекращена, но она будет сущестовать некоторое время, после которого доступ к ней будет уже невозможен.</h3>
+        <h2 class="question">Насколько долго будет делаться новая версия сайта?</h2>
+        <h3 class="answer">Точных сроков дать нельзя. Процесс этот не такой уж и простой, но возможно, создание закончится либо к январю, либо к февралю 2024 года.</h3>
+        <script src="/scripts/new-site-qa.js"></script>
+    </main>
+    <footer id="sticky-footer">
+        <h6>&copy;2023, mtv-media</h6>
+    </footer>
+    <script src="/scripts/header.js"></script>
+</body>
+</html>
+<!-- bober -->
