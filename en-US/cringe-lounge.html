@@ -1,106 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta lang="en">
-    <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Cringe lounge - MTV channel</title>
-    <meta name="Description" content="Cringe lounge - новый развлекательный проект МТВ">
+    <title>MTV channel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="icon" href="/ico.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        .top-bar {
-            background-color: #8BC34A;
-            padding: 5px;
-            margin: 0;
-            position: relative;
-            border-radius: 10px;
-        }
-        .top-bar a {
-            margin-right: 10px;
-            text-align: left;
-            text-decoration: none;
-            color: #000;
-            font-family: days;
-            font-size: 24px;
-        }
-        footer {
-            text-align: left;
-            background-color: rgb(150, 150, 150);
-            padding: 5;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-        body::after {
-            content: "";
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("/background.png");
-            background-position: center;
-            filter: blur(70px); 
-            z-index: -1;
-        }
-        h1 {
-            text-align: center;
-            font-family: days;
-            color: #0D47A1;
-        }
-        b {
-            font-family: days;
-            color: #0D47A1;
-            text-align: center;
-        }
-        .custom-link:hover {
-            text-decoration: underline;
-        }
-        .custom-link {
-            color: #000;
-            text-decoration: none;
-        }
-        h1 {
-            color: #0D47A1;
-            text-align: center;
-            font-family: days;
-        }
         p {
-            font-family: days;
+            text-align: center;
             font-size: 24px;
-        }
-        .link1:visited {
-            color: #0D47A1;
+            padding-top: 20px;
         }
     </style>
 </head>
-
 <body>
-    <header class="top-bar">
-        <h1><a href="main.html" style="text-decoration: none; color: inherit; font-size: 40px;">МТВ media</a></h1>
-        <a href="cringe-lounge.html" class="custom-link" style="text-decoration: underline;">Cringe lounge</a>
-        <a href="new-site.html" class="custom-link" style="text-decoration: none;">New site: FAQ</a>
-        <a href="https://www.mtv-media.ru" class="custom-link" target="_blank">Old site version</a>
+    <header class="header">
+            <div class="header_body">
+                <h1><a class="main" href="/en-US/main.html">MTV channel</a></h1>
+                <h1><a class="main_small" href="/en-US/main.html">MTV</a></h1>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><h3><a class="header_link" href="/en-US/cringe-lounge.html">Cringe lounge</a></h3></li>
+                        <li><h3><a class="header_link" href="/en-US/new-site.html">New site: FAQ</a></h3></li>
+                        <li><h3><a class="header_link" href="https://www.mtv-media.ru/" target="_blank">Old site version</a></h3></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
-
-<b>
-    
-    
-</b>
-
-<p style="text-indent: 20px;">
-    <a href="https://www.youtube.com/@cringe-lounge" style="text-decoration: none; color: #0D47A1;" class="link1" target="_blank">Cringe lounge</a> - this is a new MTV entertainment project, opened instead of outdated block news, they have become history.</br>
-</p>    
-<p style="text-indent: 20px;">The essence of the project is to create post-absurd comedy videos and parodies in which you don’t know what to expect this time. </p>
-
-
-
-<footer>
-    <div>
-        <a href="https://www.mtv-media.ru/group_vk"><h6>Alt страница группы ВК</h6></a>
-        &copy; mtv-media, 2023. All rights reserved.
-    </div>
-</footer>
+    <main class="content">
+        <b>
+            <p style="text-indent: 20px;">
+                <a href="https://www.youtube.com/@cringe-lounge" style="text-decoration: none; color: #0D47A1;" class="link1" target="_blank">Cringe lounge</a> - this is a new MTV entertainment project, opened instead of outdated block news, they have become history.</br>
+            </p>    
+            <p style="text-indent: 20px;">The essence of the project is to create post-absurd comedy videos and parodies in which you don’t know what to expect this time. </p>
+        </b>
+    </main>
+    <footer id="sticky-footer">
+        <h6>&copy;2023, mtv-media</h6>
+    </footer>
+    <script src="/scripts/header.js"></script>
 </body>
 </html>
+<!-- bober -->

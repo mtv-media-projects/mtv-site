@@ -1,100 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta lang="en">
-    <meta charset="utf-8">
+<head>
+    <title>New site - MTV channel</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/ico.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        .top-bar {
-            background-color: #8BC34A;
-            padding: 5px;
-            margin: 0;
-            position: relative;
-            border-radius: 10px;
-        }
-        .top-bar a {
-            margin-right: 10px;
-            text-align: left;
-            text-decoration: none;
-            color: #000;
-            font-family: days;
-            font-size: 24px;
-        }
-        footer {
-            text-align: left;
-            background-color:rgb(150, 150, 150);
-            padding: 5;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-        body::after {
-            content: "";
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("/background.png");
-            background-position: center;
-            filter: blur(70px); 
-            z-index: -1;
-        }
-        h1 {
-            color: #0D47A1;
-            text-align: center;
-            font-family: days;
-        }
-        h2 {
-            font-family: days;
-        }
-        h3 {
-            font-family: days;
-        }
-
-        h6 {
-            text-align: left;
-        }
-
-        .btn1 {
-            font-family: days;
-            border: none;
-            background: none;
-            padding: 10px 20px;
-            font-size: medium;
-        }
-
-        b {
-            color:#0D47A1;
-            font-family: days;
-            text-align: center;
-        }
-
         p {
-            font-family: days; 
-            font-size: 40px;
             text-align: center;
-        }
-
-        .custom-link {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .custom-link:hover {
-            text-decoration: underline;
+            font-size: 30px;
+            padding-top: 20px;
         }
         .question {
             cursor: pointer;
         }
 
-        .question::after {
+        .question:after {
             content: '\25BA';
             transition: transform 0.3s ease;
         }
 
-        .question.active::after {
+        .question.active:after {
             transform: rotate(180deg);
         }
 
@@ -105,42 +33,53 @@
         .question.active + .answer {
             display: block;
         }
-</style>
-    <title>Новый сайт - Канал МТВ</title>
-    <link rel="icon" href="/ico.jpg" type="image/x-icon">
+        h2 {
+            padding-top: 20px;
+        }
+        @media (max-width: 768px) {
+            p {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <header class="top-bar">
-        <h1><a href="main.html" style="text-decoration: none; color: inherit; font-size: 40px;">МТВ media</a></h1>
-        <a href="cringe-lounge.html" class="custom-link" style="text-decoration: none;">Cringe lounge</a>
-        <a href="new-site.html" class="custom-link" style="text-decoration: underline;">Новый сайт: FAQ</a>
-        <a href="https://www.mtv-media.ru" class="custom-link" target="_blank">Старая версия сайта</a>
-      </header>
-<p style="text-indent: 20px;"> На данный момент создаётся новый сайт МТВ (этот). Здесь приведены некоторые типовые вопросы и ответы на них. </p>
-<h2 class="question">Почему создаётся новый сайт?</h2>
-<h3 class="answer">Новый сайт создаётся по причине не соотвествия моим требованиям, в гугл сайтах слишком много мелких нюансов, с которыми я не хочу мириться. Поэтому я решил написать сайт с нуля, чтобы сделать его по своему вкусу.</h3>
-<h2 class="question">Что будет со старой версией?</h2>
-<h3 class="answer">Старая версия на момент разработки этой будет обновляться и актуализироваться с нынешними событиями и оформлением. После того, как новая версия будет закончена, поддержка старой версии будет прекращена, но она будет сущестовать некоторое время, после которого доступ к ней будет уже невозможен.</h3>
-<h2 class="question">Насколько долго будет делаться новая версия сайта?</h2>
-<h3 class="answer">Точных сроков дать нельзя. Процесс этот не такой уж и простой, но возможно, создание закончится либо к январю, либо к февралю 2024 года.</h3>
-
-<script>
-    const questions = document.querySelectorAll('.question');
-
-    questions.forEach(question => {
-    question.addEventListener('click', function() {
-    this.classList.toggle('active');
-  });
-});
-</script>
-
-<footer>
-    <span>
-        <a href="https://www.mtv-media.ru/group_vk"><h6>Alt страница группы ВК</h6></a>
-        &copy; mtv-media, 2023. Все права защищены.
-    </span>
-  </footer>
-
+    <header class="header">
+            <div class="header_body">
+                <h1><a class="main" href="/en-US/main.html">MTV channel</a></h1>
+                <h1><a class="main_small" href="/en-US/main.html">MTV</a></h1>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><h3><a class="header_link" href="/en-US/cringe-lounge.html">Cringe lounge</a></h3></li>
+                        <li><h3><a class="header_link" href="/en-US/new-site.html">New site: FAQ</a></h3></li>
+                        <li><h3><a class="header_link" href="https://www.mtv-media.ru/" target="_blank">Old site version</a></h3></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main class="content">
+        <p style="text-indent: 20px;"> <b>At the moment, a new MTV website is being created (this one). Here are some typical questions and their answers.</b></p>
+        <h2 class="question">Why is a new website being created?</h2>
+        <h3 class="answer">A new site is being created because it does not meet my requirements; there are too many small nuances in Google sites that I do not want to put up with. So I decided to write a website from scratch to make it to my liking.</h3>
+        <h2 class="question">What will happen to the old version?</h2>
+        <h3 class="answer">The old version at the time of development of this one will be updated with current events and design. Once the new version is finished, support for the old version will be discontinued, but it will exist for a while, after which it will no longer be accessible.</h3>
+        <h2 class="question">How long will it take to create a new version of the site?</h2>
+        <h3 class="answer">It is impossible to give exact dates. This process is not so simple, but it is possible that the creation will be completed either by January or February 2024.</h3>
+        <script src="/scripts/new-site-qa.js"></script>
+    </main>
+    <footer id="sticky-footer">
+        <h6>&copy;2023, mtv-media</h6>
+    </footer>
+    <script src="/scripts/header.js"></script>
 </body>
 </html>
+<!-- bober -->

@@ -1,108 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <style>
-      .top-bar {
-        background-color: #8bc34a;
-        padding: 5px;
-        margin: 0;
-        position: relative;
-        border-radius: 10px;
-      }
-      .top-bar a {
-        margin-right: 10px;
-        text-align: left;
-        text-decoration: none;
-        color: #000;
-        font-family: days;
-        font-size: 24px;
-      }
-      footer {
-        text-align: left;
-        background-color: rgb(150, 150, 150);
-        padding: 5;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-      }
-      body::after {
-        content: "";
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("/background.png");
-        background-position: center;
-        filter: blur(70px);
-        z-index: -1;
-      }
-      h1 {
-        color: #0d47a1;
-        text-align: center;
-        font-family: days;
-      }
-
-      h6 {
-        text-align: left;
-      }
-
-      .btn1 {
-        font-family: days;
-        border: none;
-        background: none;
-        padding: 10px 20px;
-        font-size: medium;
-      }
-
-      b {
-        color: #0d47a1;
-        font-family: days;
-        text-align: center;
-      }
-
-      p {
-        font-family: days;
-        font-size: 40px;
-        text-align: center;
-      }
-
-      .custom-link {
-        color: #000;
-        text-decoration: none;
-      }
-
-      .custom-link:hover {
-        text-decoration: underline;
-      }
-    </style>
-    <link rel="icon" href="ico.jpg" type="image/x-icon">
+<head>
     <title>MTV channel</title>
-  </head>
-
-  <body>
-    <header class="top-bar">
-      <h1><a href="main.html" style="text-decoration: none; color: inherit; font-size: 40px">МТВ media</a></h1>
-      <a href="cringe-lounge.html" class="custom-link" style="text-decoration: none">Cringe lounge</a>
-      <a href="new-site.html" class="custom-link" style="text-decoration: none">New site: FAQ</a>
-      <a href="/test.html" class="custom-link" style="text-decoration: none">Test</a>
-      <a href="https://www.mtv-media.ru" class="custom-link" target="_blank">Old site version</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/ico.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        p {
+            text-align: center;
+            font-size: 24px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+            <div class="header_body">
+                <h1><a class="main" href="/en-US/main.html">MTV channel</a></h1>
+                <h1><a class="main_small" href="/en-US/main.html">MTV</a></h1>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><h3><a class="header_link" href="/en-US/cringe-lounge.html">Cringe lounge</a></h3></li>
+                        <li><h3><a class="header_link" href="/en-US/new-site.html">New site: FAQ</a></h3></li>
+                        <li><h3><a class="header_link" href="https://www.mtv-media.ru/" target="_blank">Old site version</a></h3></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
-
-    <b> </b>
-
-    <p>The site is under development.</p>
-
-    <footer>
-      <span>
-        <a href="https://www.mtv-media.ru/group_vk"><h6>Alt страница группы ВК</h6></a>
-        &copy; mtv-media, 2023. All rights reserved.
-      </span>
+    <main class="content">
+        <b><p>The site is under development.</p></b>
+    </main>
+    <footer id="sticky-footer">
+        <h6>&copy;2023, mtv-media</h6>
     </footer>
-  </body>
+    <script src="/scripts/header.js"></script>
+</body>
 </html>
-
-<!-- Бобер -->
+<!-- bober -->
