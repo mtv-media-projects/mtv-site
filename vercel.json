@@ -6,20 +6,11 @@
     }
   ],
     "routes": [
-        { 
-          "src": "/", 
-          "dest": "/main.html"
-        },
+      { "src": "/", 
+        "dest": "/main.html" },
         {
           "src": "/(.*)",
           "dest": "/$1.html"
-        },
-        {
-          "src": "/(.*)", 
-          "status": 404, 
-          "dest": "/404.html"
-        },
-        { "handle": "filesystem" },
-        { "src": "/(.*)", "status": 404, "dest": "/other-404.html" }
-      ]
+        }
+    ]
   }
