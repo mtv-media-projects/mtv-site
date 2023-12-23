@@ -14,11 +14,11 @@
         "dest": "/main.html"
       },
       {
-        "src": "/.*",
+        "src": "/(.*)",
         "dest": "/$1.html"
       },
       {
-        "src": "/.*",
+        "src": "/(.*)",
         "status": 404,
         "dest": "/404.html"
       }
