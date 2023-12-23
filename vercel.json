@@ -9,14 +9,7 @@
       {
         "handle": "filesystem"
       },
-      {
-        "src": "/", 
-        "dest": "/main.html"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/$1.html"
-      },
+
       {
         "src": "/.*",
         "status": 404,
