@@ -7,6 +7,14 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "/main.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1.html"
+    },
+    {
       "src": "/404",
       "dest": "/404.html"
     },
@@ -17,14 +25,6 @@
       "src": "/(.*)",
       "status": 404,
       "dest": "/404"
-    },
-    {
-      "src": "/",
-      "dest": "/main.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1.html"
     }
   ]
 }
