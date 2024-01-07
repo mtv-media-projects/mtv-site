@@ -21,9 +21,7 @@
     {
       "src": "/(.*)",
       "dest": "/$1.html"
-    },
-    {
-      "cleanUrls": true
     }
-  ]
+  ],
+  "cleanUrls": true
 }
