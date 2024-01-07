@@ -7,6 +7,9 @@
   ],
   "routes": [
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/",
       "dest": "/main.html"
     },
@@ -17,9 +20,6 @@
     {
       "src": "/404",
       "dest": "/404.html"
-    },
-    {
-      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
