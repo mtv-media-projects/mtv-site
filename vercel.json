@@ -7,21 +7,24 @@
   ],
   "routes": [
     {
+      "src": "/404",
+      "dest": "/404.html"
+    },
+    {
       "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404"
     },
     {
       "src": "/",
       "dest": "/main.html"
     },
     {
-      "src": "/.*",
-      "status": 404,
-      "dest": "/404.html"
-    },
-    {
       "src": "/(.*)",
       "dest": "/$1.html"
     }
-  ],
-  "cleanUrls": true
+  ]
 }
