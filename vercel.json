@@ -14,8 +14,16 @@
       "dest": "/main.html"
     },
     {
-      "src": "/(.*)",
-      "dest": "/$1.html"
+      "src": "/cringe-lounge",
+      "dest": "/cringe-lounge.html"
+    },
+    {
+      "src": "/new-site",
+      "dest": "/new-site.html"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
     },
     {
       "src": "/404",
@@ -25,6 +33,10 @@
       "src": "/(.*)",
       "status": 404,
       "dest": "/404"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1.html"
     }
   ]
 }
