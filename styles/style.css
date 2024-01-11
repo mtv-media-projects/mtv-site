@@ -53,23 +53,18 @@ body::after {
 footer {
     background-color: #8bc34a;
     width: 100%;
-    color: white;
     padding: 20px;
     position: relative;
-    bottom: 0;
-    text-align: center;
 }
 
-footer h4 {
-    margin: 0;
+.copyright {
+    text-align: center;
+    color: white;
+    position: relative;
 }
 
 p {
     margin-bottom: 10px;
-}
-
-footer h4 {
-    margin: 0;
 }
 
 html, body {
