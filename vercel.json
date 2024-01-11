@@ -10,6 +10,11 @@
       "handle": "filesystem"
     },
     {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404"
+    },
+    {
       "src": "/",
       "dest": "/main.html"
     },
@@ -24,11 +29,6 @@
     {
       "src": "/about",
       "dest": "/about.html"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/404"
     }
   ]
 }
