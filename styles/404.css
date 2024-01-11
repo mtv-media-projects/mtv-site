@@ -118,6 +118,10 @@ html, body {
     background-color: #8bc34a;
 }
 
+.shit {
+    size: 50px;
+}
+
 .header_list {
     display: flex;
     position: relative;
@@ -165,7 +169,7 @@ html, body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
     body.lock {
         overflow: hidden;
     }
