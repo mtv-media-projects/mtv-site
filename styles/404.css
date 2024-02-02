@@ -201,6 +201,16 @@ html, body {
     transition: opacity 0.5s ease;
 }
 
+noscript {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #8bc34a;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1000;
+}
+
 
 @media screen and (max-width: 910px) {
     .header_body {
