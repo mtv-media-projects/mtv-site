@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const darkModeToggle = document.querySelector('.light-mode');
+    const darkModeToggle = document.querySelector('.theme-switch');
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
     const menu = document.querySelector('.header_menu');
     const menuList = document.querySelectorAll('.header_link');
     const footer_links = document.querySelector('.links')
     const copyright = this.documentElement.querySelector('.copyright')
+    
 
     // Проверяем, включен ли тёмный режим на устройстве пользователя
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
