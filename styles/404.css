@@ -51,6 +51,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.link-test {
+    text-decoration: none;
+    color: #0d47a1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .links {
     padding-left: 20px;
     font-family: days;
@@ -70,6 +76,9 @@ body {
 }
 
 .link-pwa:hover {
+    text-decoration: underline;
+}
+.link-test:hover {
     text-decoration: underline;
 }
 
