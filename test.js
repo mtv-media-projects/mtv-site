@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const menu = document.querySelector('.header_menu')
 	const menuList = document.querySelectorAll('.header_link')
 	const footer_links = document.querySelector('.links')
+	const add_links = document.querySelector('.add-links')
 	const copyright = document.documentElement.querySelector('.copyright')
 	const svgElement = document.getElementById('mySvg')
 
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			footer.classList.toggle('dark-mode')
 			menu.classList.toggle('dark')
 			footer_links.classList.toggle('dark')
+			add_links.classList.toggle('dark')
 			copyright.classList.toggle('dark')
 			menuList.forEach(function (item) {
 				item.classList.toggle('dark')

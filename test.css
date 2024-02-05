@@ -17,6 +17,36 @@
 
 .theme-switch {
 	margin-left: 20px;
+	position: relative;
+	display: inline-block;
+}
+
+/* Стили для текстовой надписи в подсказке */
+.theme-switch .tooltiptext {
+	visibility: hidden;
+  	width: 120px;
+  	background-color: #555;
+	opacity: 0;
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 5px;
+  	position: absolute;
+  	z-index: 1;
+  	top: calc(100% + 5px); /* Расположение под кнопкой */
+	left: calc(50% - 40px);
+  	transform: translateX(-50%);
+  	transition: opacity 0.3s ease;
+}
+
+/* Показываем подсказку при наведении на объект */
+.theme-switch:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+#mySvg {
+	fill: #345751;
 }
 
 main {
@@ -42,8 +72,19 @@ body {
 
 #footer-container {
 	display: flex;
-	flex-direction: column;
 	padding: 20px;
+}
+
+#footer-container > div {
+	display: flex;
+}
+
+.links, .add-links {
+	margin-right: 20px;
+}
+
+.link-yt, .link-tg, .link-vk, .link-pwa {
+	display: block;
 }
 
 .link-yt {
@@ -58,6 +99,12 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.link-vk {
+	text-decoration: none;
+	color: #0077FF;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .link-pwa {
 	text-decoration: none;
 	color: #0d47a1;
@@ -69,17 +116,43 @@ body {
 	font-family: days;
 }
 
+.links li {
+	padding-top: 10px;
+	list-style: none;
+}
+
+.add-links {
+	padding-left: 20px;
+	font-family: days;
+}
+
+.add-links li {
+	padding-top: 10px;
+	list-style: none;
+}
+
 .links.dark {
 	color: #345751
 }
 
-.links.dark .link-pwa, .link-tg, .link-yt {
+.links.dark .link-yt {
     color: #345751;
 }
 
-.links li {
-	padding-top: 10px;
-	list-style: none;
+.links.dark .link-tg {
+    color: #345751;
+}
+
+.links.dark .link-vk {
+	color: #345751;
+}
+
+.add-links.dark {
+	color: #345751;
+}
+
+.add-links.dark .link-pwa {
+    color: #345751;
 }
 
 .link-yt:hover {
@@ -87,6 +160,10 @@ body {
 }
 
 .link-tg:hover {
+	text-decoration: underline;
+}
+
+.link-vk:hover {
 	text-decoration: underline;
 }
 
@@ -177,6 +254,10 @@ header.dark-mode {
 
 header.dark-mode .main {
     color: #345751;
+}
+
+header.dark-mode #mySvg {
+	fill: #8bc34a;
 }
 
 .header_body {
@@ -301,7 +382,7 @@ noscript {
 		top: -100%;
 		left: 0;
 		width: 100%;
-		height: 185px;
+		height: 220px;
 		background-color: #8bc34a;
 		padding: 55px 10px 20px 10px;
 		transition: all 0.4s ease 0s;
@@ -354,7 +435,16 @@ noscript {
 		align-items: center;
 	}
 
+	#footer-container > div {
+		flex-direction: column;
+	}
+
 	.links {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.add-links {
 		text-align: center;
 	}
 
