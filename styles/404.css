@@ -57,6 +57,7 @@
 
 #mySvg {
 	fill: #345751;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -82,38 +83,31 @@ body {
 	margin-right: 20px;
 }
 
-.link-yt, .link-tg, .link-vk, .link-pwa {
+.link-yt, .link-tg, .link-vk, .link-pwa, .link-test {
 	display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .link-yt {
-	text-decoration: none;
 	color: #bd4333;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .link-tg {
-	text-decoration: none;
 	color: #3485e0;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .link-vk {
-	text-decoration: none;
 	color: #0077FF;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .link-pwa {
-	text-decoration: none;
 	color: #0d47a1;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .link-test {
-	text-decoration: none;
 	color: #0d47a1;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .links {
@@ -137,31 +131,38 @@ body {
 }
 
 .links.dark {
-	color: #345751
+	color: #345751;
+    transition: all 0.3s ease;
 }
 
 .links.dark .link-yt {
     color: #345751;
+    transition: all 0.3s ease;
 }
 
 .links.dark .link-tg {
     color: #345751;
+    transition: all 0.3s ease;
 }
 
 .links.dark .link-vk {
 	color: #345751;
+    transition: all 0.3s ease;
 }
 
 .add-links.dark {
 	color: #345751;
+    transition: all 0.3s ease;
 }
 
 .add-links.dark .link-pwa {
     color: #345751;
+    transition: all 0.3s ease;
 }
 
 .add-links.dark .link-test {
 	color: #345751;
+    transition: all 0.3s ease;
 }
 
 .link-yt:hover {
@@ -192,10 +193,12 @@ footer {
 	background-color: #8bc34a;
 	width: 100%;
 	position: relative;
+    transition: all 0.3s ease;
 }
 
 footer.dark-mode {
     background-color: #122925;
+    transition: all 0.3s ease;
 }
 
 .copyright {
@@ -208,11 +211,13 @@ footer.dark-mode {
 	width: 100%;
 	height: 30px;
 	font-family: sans-serif;
+    transition: all 0.3s ease;
 }
 
 .copyright.dark {
     color: #a5b4b1;
 	background-color: #0f221f;
+    transition: all 0.3s ease;
 }
 
 p {
@@ -237,10 +242,12 @@ html, body {
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .error-message.dark {
     background-color: #1d2e2b;
+    transition: all 0.3s ease;
 }
 
 .error-message .home-button {
@@ -255,6 +262,7 @@ html, body {
 
 .error-message .home-button:hover {
     background-color: #689f38;
+    transition: all 0.3s ease;
 }
 
 .logo {
@@ -276,6 +284,7 @@ header {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	transition: top 0.3s;
 	background-color: #8bc34a;
+    transition: all 0.3s ease;
 }
 
 header h1 {
@@ -284,14 +293,17 @@ header h1 {
 
 header.dark-mode {
 	background-color: #122925;
+    transition: all 0.3s ease;
 }
 
 header.dark-mode .main {
     color: #345751;
+    transition: all 0.3s ease;
 }
 
 header.dark-mode #mySvg {
 	fill: #8bc34a;
+    transition: all 0.3s ease;
 }
 
 .header_body {
@@ -318,10 +330,12 @@ header.dark-mode #mySvg {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 18px;
+    transition: all 0.3s ease;
 }
 
 .header_link.dark {
 	color: #345751;
+    transition: all 0.3s ease;
 }
 
 .header_menu {
@@ -355,10 +369,12 @@ noscript {
         display: block;
         padding-left: 20px;
         opacity: 1;
+        transition: all 0.3s ease;
     }
     
     header.dark-mode .main_small {
         color: #345751;
+        transition: all 0.3s ease;
     }
     
     .main {
@@ -497,6 +513,11 @@ noscript {
     
     .add-links {
         text-align: center;
+    }
+
+    .theme-switch .tooltiptext {
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     }
