@@ -201,8 +201,9 @@ body::after {
 	width: 100%;
 	height: 100%;
 	background-image: url('/background.png');
-	background-position: center;
-	filter: blur(50px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur(70px); 
 	z-index: -1;
 
 }
