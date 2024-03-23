@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+</head>
+<body>
+    <button id="getDataButton">Get Data from Server</button>
+    <div id="output"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.getElementById('getDataButton').addEventListener('click', async function() {
+            try {
+                const response = await axios.get('https://api.mtv-media.ru');
+                document.getElementById('output').innerText = JSON.stringify(response.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        });
+    </script>
+</body>
+</html>
