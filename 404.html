@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>Канал МТВ</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect</title>
-    <script>
-        window.location.href = "/main";
-    </script>
+    <link rel="stylesheet" href="/styles/404.css">
+    <link rel="icon" href="/ico.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/vite@2.6.14/dist/client/client.min.mjs"></script>
+    <script src="/scripts/theme-switch.js"></script>
 </head>
+<body>
+    <noscript>
+        <strong>Функции JavaScript в вашем браузере отключены. Чтобы продолжить работу с сайтом, пожалуйста, включите JavaScript в настройках вашего браузера.</strong>
+    </noscript>
+    <header class="header">
+            <div class="header_body">
+                <h1><a class="main" href="/main.html">Канал МТВ</a></h1>
+                <h1><a class="main_small" href="/main.html">МТВ</a></h1>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+					<ul class="header_list">
+						<li><h3><a class="header_link" href="cringe-lounge.html">Cringe lounge</a></h3></li>
+						<li><h3><a class="header_link" href="new-site.html">Новый сайт: FAQ</a></h3></li>
+						<li><h3><a class="header_link" href="https://old.mtv-media.ru/" target="_blank">Старая версия сайта</a></h3></li>
+						<div class="theme-switch">
+							<button id="theme-toggle-btn">
+							<svg id="mySvg" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><rect fill="none" height="24" width="24"/>
+								<path d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/>
+							</svg>
+							</button>
+							<span class="tooltiptext">Сменить тему сайта</span>
+						</div>
+					</ul>
+				</nav>
+            </div>
+    </header>
+    <main class="content">
+        <div class="error-message">
+            <h1 class="logo">МТВ</h1>
+            <h2>Ошибка 404</h2>
+            <p>Страница не найдена 😔</p>
+            <a class="home-button" href="/main.html">На главную</a>
+            <!-- Дополнительный текст или информация об ошибке -->
+        </div>
+    </main>
+    <footer id="sticky-footer">
+        <div id="footer-container">
+            <div>
+                <ul class="links">
+                    <b>Ссылки</b><br>
+                    <li><a class="link-yt" href="https://www.youtube.com/@mtv-mdeia">YouTube-канал</a></li>
+                    <li><a class="link-tg" href="https://t.me/kanal_mtv2019">Telegram-канал</a></li>
+                    <li><a class="link-vk" href="https://vk.com/mtv_media">Группа ВК</a></li>
+                </ul>
+                <ul class="add-links">
+                    <b>Дополнительно</b><br>
+                    <li><a class="link-pwa" href="https://pwa.mtv-media.ru/">Приложение МТВ (Бета)</a></li>
+                    <li><a class="link-test" href="/test.html">Тест</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h5>&copy;2019-2024, mtv-media</h5>
+        </div>
+    </footer>
+    <script src="/scripts/header.js"></script>
+</body>
 </html>
+<!-- bober -->
