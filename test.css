@@ -244,16 +244,15 @@ body::after {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url('/background.webp');
+	background-image: url('/background-blur.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
-	filter: blur(70px); 
 	z-index: -1;
 
 }
 
 body.dark-mode::after {
-	background-image: url('/background-dark.webp');
+	background-image: url('/background-dark-blur.webp');
 }
 
 p {
